@@ -31,4 +31,9 @@ module.exports = (app) => {
             .then(results => res.json(results))
             .catch(err => console.log(err));
     })
+    app.delete('/api/article/:id', (req,res) => {
+        Article.deleteOne({ _id: req.params.id})
+        .then(results => res.json(results))
+        .catch(err => console.log(err))
+    })
 };
