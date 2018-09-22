@@ -7,6 +7,10 @@ class ArticleResults extends Component {
         articles: [],
         savedArticles: [],
       }
+      componentDidMount() {
+          API.getNYTArticles()
+          .then(res => this.setState({articles: res.data}));
+      }
       getNYTArticles = () => {
         API.getNYTArticles()
         .then(res => this.setState({articles: res.data}));
@@ -20,7 +24,7 @@ class ArticleResults extends Component {
       render() {
         return (
           <div>
-          <button onClick={this.getNYTArticles}>Get Articles</button>
+          <h2>Here's your Latest News</h2>
             <ArticleContainer
               articles={this.state.articles}
               saveArticleHandler={this.saveArticleHandler}

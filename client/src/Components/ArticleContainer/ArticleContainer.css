@@ -1,3 +1,7 @@
-.ArticleContainer {
-    border: 1px solid black;
+#ArticleContainer {
+    margin-top: 25px;
+    border-top: 3px solid lightgray;
+    width: 65%;
+    margin: 0 auto;
+    transition:all 0.3s ease;
 };

@@ -1,6 +1,74 @@
 .Article{
-    margin: 16px;
-    border: 2px solid green;
+    border: 1px solid lightgray;
+    margin: 10px;
     padding: 10px;
-
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.66); 
+    box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.66);
+    -webkit-box-shadow: inset -55px -66px 180px -113px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -55px -66px 180px -113px rgba(0,0,0,0.75);
+box-shadow: inset -55px -66px 180px -113px rgba(0,0,0,0.75);
+    transition: 0.3s all ease;
+    background: rgb(243, 243, 243)
+    
+}
+.Modal{
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid lightgray;
+    outline: none;
+    position: relative;
+        top: 30%;
+        padding: 25px;
+        margin: 0 auto;
+        width:60%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50% -50%)
+      
+}
+.title{
+    text-align: left;
+    float: left;
+}
+button{
+    font-family: 'Arimo', sans-serif !important;
+    border-radius: 10px;
+    outline: none;
+    border: hidden;
+    float: right;
+    padding: 20px;
+    background-color: #C0C0C0;
+    transition: 0.2s all linear;
+    box-shadow: inset -35px -66px 180px -113px rgba(0,0,0,0.75);
+}
+.fix{
+    clear: both;
+}
+.Article:Hover{
+    transform: scale(1.02)
+    
+}
+button:hover{
+    background-color: lawngreen
+}
+.button:active {
+    background-color: rgb(102, 204, 0);
+    box-shadow: inset -20px -50px 180px -113px rgba(0,0,0,0.75);
+    transform: translateY(4px);
+  }
+  .button:active::after {
+    background-color: rgb(80, 156, 3);
+    box-shadow: inset -20px -50px 180px -113px rgba(0,0,0,0.75);
+    transform: translateY(4px);
+  }
+.closeModal{
+    font-family: 'Arimo', sans-serif !important;
+    border-radius: 10px;
+    outline: none;
+    border: hidden;
+    float: right;
+    padding: 10px;
+    background-color: #C0C0C0;
+    transition: 0.2s all linear;
+    box-shadow: inset -10px -66px 180px -113px rgba(0,0,0,0.75);
 }
